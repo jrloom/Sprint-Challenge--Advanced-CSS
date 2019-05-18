@@ -13,10 +13,16 @@
     .flex(null, null, space-between);
     width: 30%;
     font-size: 2rem;
+    @media @phone {
+      width: 90%;
+    }
     &__link {
       .margin(0, 0, 20px, 0);
       .link();
       color: #000;
     }
+  }
+  @media @phone {
+    align-items: center;
   }
 }
