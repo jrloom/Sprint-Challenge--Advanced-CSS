@@ -165,6 +165,8 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  opacity: 0.95;
   width: 100%;
   background: #f6f6f6;
   border-bottom: 2px solid #f1f1f1;
@@ -212,6 +214,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  position: relative;
+  top: 15rem;
+  z-index: -1;
 }
 .home .intro .header-img {
   border-radius: 10px;
