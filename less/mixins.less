@@ -1,5 +1,14 @@
 // Mixins Here
 
+.link() {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.rounded-corners(@radius: 10px) {
+  border-radius: @radius;
+}
+
 .flex (@direction: row, @align: center, @justify: center) {
   display: flex;
   flex-direction: @direction;
@@ -14,11 +23,13 @@
   margin-left: @left;
 }
 
-.link() {
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.rounded-corners() {
-  border-radius: 10px;
+.button(@radius, @width) {
+  .rounded-corners(@radius);
+  width: @width;
+  padding: 10px 10px;
+  background: #262c3c;
+  border: 1px solid #000;
+  color: #efefef;
+  font-size: 2rem;
+  text-align: center;
 }
