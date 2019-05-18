@@ -1,1 +1,24 @@
 // Mixins Here
+
+.flex (@direction: row, @align: center, @justify: center) {
+  display: flex;
+  flex-direction: @direction;
+  align-items: @align;
+  justify-content: @justify;
+}
+
+.margin (@top, @right, @bottom, @left) {
+  margin-top: @top;
+  margin-right: @right;
+  margin-bottom: @bottom;
+  margin-left: @left;
+}
+
+.link() {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.rounded-corners() {
+  border-radius: 10px;
+}
