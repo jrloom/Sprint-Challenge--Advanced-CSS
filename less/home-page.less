@@ -3,7 +3,6 @@
 .home {
   position: relative;
   top: 15rem;
-  z-index: -1;
   .intro {
     .header-img {
       .rounded-corners();
@@ -31,6 +30,15 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    .blast,
+    .sky,
+    .launch {
+      .resize-transition();
+      &:hover {
+        .resize-transform();
+      }
     }
 
     .blast {
@@ -90,8 +98,10 @@
 
       .btn {
         .button(10px, 30%);
+        .resize-transition();
         transition: color 300ms, background 300ms;
         &:hover {
+          .resize-transform();
           color: #262c3c;
           background: #efefef;
         }
