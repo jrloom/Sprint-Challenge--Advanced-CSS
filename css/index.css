@@ -298,7 +298,7 @@ footer {
   color: #efefef;
   font-size: 2rem;
   text-align: center;
-  transition: color background 300ms;
+  transition: color 300ms, background 300ms;
 }
 .home .walk .walk-text .btn:hover {
   color: #262c3c;
@@ -307,6 +307,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     width: 90%;
+    margin-bottom: 16px;
   }
 }
 .home .walk .walk-img {
