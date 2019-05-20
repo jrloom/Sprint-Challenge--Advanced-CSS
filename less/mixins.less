@@ -1,1 +1,43 @@
 // Mixins Here
+
+.link() {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.rounded-corners(@radius: 10px) {
+  border-radius: @radius;
+}
+
+.flex (@direction: row, @align: center, @justify: center) {
+  display: flex;
+  flex-direction: @direction;
+  align-items: @align;
+  justify-content: @justify;
+}
+
+.margin (@top, @right, @bottom, @left) {
+  margin-top: @top;
+  margin-right: @right;
+  margin-bottom: @bottom;
+  margin-left: @left;
+}
+
+.button(@radius, @width) {
+  .rounded-corners(@radius);
+  width: @width;
+  padding: 10px 10px;
+  background: #262c3c;
+  border: 1px solid #000;
+  color: #efefef;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.resize-transition() {
+  transition: transform 300ms ease;
+}
+
+.resize-transform() {
+  transform: scale(1.3);
+}

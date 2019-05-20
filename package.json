@@ -1,0 +1,26 @@
+{
+  "name": "sprint-challenge--advanced-css",
+  "version": "1.0.0",
+  "description": "This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS techniques using Responsive Design and Preprocessing. During this Sprint, you studied how to use the viewport meta tag, media queries, setting up a preprocessor, and advanced use of preprocessing techniques. In your challenge this week, you will demonstrate proficiency by updating a website that is missing content as well as adding mobile styling.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrloom/Sprint-Challenge--Advanced-CSS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrloom/Sprint-Challenge--Advanced-CSS/issues"
+  },
+  "homepage": "https://github.com/jrloom/Sprint-Challenge--Advanced-CSS#readme",
+  "devDependencies": {
+    "less-watch-compiler": "^1.13.0",
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+    "devserver": "live-server --browser=firefox",
+    "watch-less": "less-watch-compiler less css index.less",
+    "start": "npm-run-all --parallel devserver watch-less"
+  }
+}

@@ -1,1 +1,31 @@
 // Navigation code here
+
+.navigation {
+  .flex(column);
+  position: fixed;
+  z-index: 100;
+  opacity: 0.95;
+  width: 100%;
+  background: #f6f6f6;
+  border-bottom: 2px solid #f1f1f1;
+  & .page-title {
+    .margin(20px, 0, 30px, 0);
+    font-size: 5rem;
+  }
+  & .navbar {
+    .flex(null, null, space-between);
+    width: 30%;
+    font-size: 2rem;
+    @media @phone {
+      width: 90%;
+    }
+    &__link {
+      .margin(0, 0, 20px, 0);
+      .link();
+      color: #000;
+    }
+  }
+  @media @phone {
+    align-items: center;
+  }
+}
